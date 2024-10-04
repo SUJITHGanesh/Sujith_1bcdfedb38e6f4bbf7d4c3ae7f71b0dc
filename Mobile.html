@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Store Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mobile Store Management System</h1>
+
+        <div class="form-container">
+            <h2>Add New Product</h2>
+            <form id="product-form">
+                <input type="text" id="product-name" placeholder="Product Name" required />
+                <input type="text" id="product-brand" placeholder="Brand" required />
+                <input type="number" id="product-price" placeholder="Price" required />
+                <input type="number" id="product-stock" placeholder="Stock Quantity" required />
+                <button type="submit">Add Product</button>
+            </form>
+        </div>
+
+        <div class="product-list-container">
+            <h2>Product List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Brand</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="product-list">
+                    <!-- Products will be listed here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

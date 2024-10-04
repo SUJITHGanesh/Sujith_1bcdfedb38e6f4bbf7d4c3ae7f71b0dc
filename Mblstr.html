@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Store Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mobile Store Management</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
+            <li><a href="#" onclick="showSection('products')">Products</a></li>
+            <li><a href="#" onclick="showSection('customers')">Customers</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="active-section">
+            <h2>Dashboard</h2>
+            <div class="stats">
+                <div class="card">
+                    <h3>Total Products</h3>
+                    <p id="total-products">0</p>
+                </div>
+                <div class="card">
+                    <h3>Total Customers</h3>
+                    <p id="total-customers">0</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="hidden-section">
+            <h2>Add Product</h2>
+            <form id="product-form">
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" required>
+                <label for="product-price">Price:</label>
+                <input type="number" id="product-price" required>
+                <button type="submit">Add Product</button>
+            </form>
+            <h3>Product List</h3>
+            <ul id="product-list"></ul>
+        </section>
+
+        <!-- Customers Section -->
+        <section id="customers" class="hidden-section">
+            <h2>Add Customer</h2>
+            <form id="customer-form">
+                <label for="customer-name">Customer Name:</label>
+                <input type="text" id="customer-name" required>
+                <label for="customer-email">Email:</label>
+                <input type="email" id="customer-email" required>
+                <button type="submit">Add Customer</button>
+            </form>
+            <h3>Customer List</h3>
+            <ul id="customer-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mobile Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

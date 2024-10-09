@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Store Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mobile Store Management</h1>
+
+    <!-- Product Management Section -->
+    <div class="section">
+      <h2>Product Management</h2>
+      <form id="product-form">
+        <div class="form-group">
+          <label for="product-name">Product Name</label>
+          <input type="text" id="product-name" placeholder="Enter product name" required>
+        </div>
+        <div class="form-group">
+          <label for="product-brand">Brand</label>
+          <input type="text" id="product-brand" placeholder="Enter product brand" required>
+        </div>
+        <div class="form-group">
+          <label for="product-price">Price</label>
+          <input type="number" id="product-price" placeholder="Enter product price" required>
+        </div>
+        <div class="form-group">
+          <label for="product-stock">Stock</label>
+          <input type="number" id="product-stock" placeholder="Enter stock quantity" required>
+        </div>
+        <button type="submit" class="btn">Add Product</button>
+      </form>
+      <div id="product-list">
+        <h3>Product List</h3>
+        <ul id="products"></ul>
+      </div>
+    </div>
+
+    <!-- Customer Management Section -->
+    <div class="section">
+      <h2>Customer Management</h2>
+      <form id="customer-form">
+        <div class="form-group">
+          <label for="customer-name">Customer Name</label>
+          <input type="text" id="customer-name" placeholder="Enter customer name" required>
+        </div>
+        <div class="form-group">
+          <label for="customer-phone">Phone</label>
+          <input type="tel" id="customer-phone" placeholder="Enter customer phone" required>
+        </div>
+        <div class="form-group">
+          <label for="customer-email">Email</label>
+          <input type="email" id="customer-email" placeholder="Enter customer email" required>
+        </div>
+        <button type="submit" class="btn">Add Customer</button>
+      </form>
+      <div id="customer-list">
+        <h3>Customer List</h3>
+        <ul id="customers"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
